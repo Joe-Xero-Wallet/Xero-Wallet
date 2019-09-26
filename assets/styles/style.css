@@ -438,48 +438,38 @@ div.noAddressWrapper {
 }
 
 /* JB add------------------------------ */
-
 .picto-item {
-  position: relative;  /*.picto-item referents*/
+  position: relative;
+  /*.picto-item referents*/
   cursor: help;
   border-radius: 40%;
 }
 
 /* :after element on hover and focus :*/
-
 .picto-item:hover:after,
 .picto-item:focus:after {
-  content: attr(aria-label);  /* display aria-label */
+  content: attr(aria-label);
   position: absolute;
-  top: 2.4em; 
+  top: 2.4em;
   left: 0%;
-	transform: translateX(0%); /* H center  */
-  z-index: 1; /* Z-Top */
-  white-space: nowrap;  /* no cr-lf */
+  transform: translateX(0%);
+  z-index: 1;
+  white-space: nowrap;
   padding: 5px 14px;
-  background: #413219;
+  background: #212529;
   background: #308529;
-
   color: #fff;
   border-radius: 4px;
- /* font-size: 1.2rem; */
 }
 
 /* 2nd element for the arrow :before */
-
 [aria-label]:hover:before,
 [aria-label]:focus:before {
-/*  content: "▼"; */
-  content: "◄"; 
-
+  content: "◄";
   position: relative;
- /* top: -1em; */
-	left: -45px;
-/*	transform: translateX(-50%); */
+  left: -45px;
   font-size: 24px;
-/*  color: #413219; */
-  color: #308529; 
-
+  color: #308529;
 }
 
 /* no contour on :focus */
@@ -487,9 +477,7 @@ div.noAddressWrapper {
   outline: none;
 }
 
-
-
-/* Deco */ 
+/* Deco */
 p, .pictos {
   text-align: center;
 }
@@ -499,39 +487,29 @@ p, .pictos {
   justify-content: center;
   align-items: center;
   margin: 0 .2em;
- /* width: 1.2em; */
-/*  height: 1.2em; */
-  color: #413219;
+  color: #212529;
   color: #308529;
   color: #fff;
   background: #e1d3bd;
-  background: #333;
+  background: #212529;
   border-radius: 1px;
-
-  /*  background: #308529; */
-
-/*  background: #e1d3bd; */
-/*  font-size: 3rem; */
   text-align: center;
   text-decoration: none;
 }
 
-
 .picto-item2:hover:after,
 .picto-item2:focus:after {
-  content: attr(aria-label);  
+  content: attr(aria-label);
   position: absolute;
-  /* top: 2.4em; */
   left: 50%;
-	transform: translateX(-50%); 
-  z-index: 1; 
-  white-space: nowrap;  
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
   padding: 5px 14px;
-  background: #413219;
+  background: #212529;
   background: #308529;
   color: #fff;
   border-radius: 4px;
- /* font-size: 1.2rem; */
 }
 
 .picto-item2 {
@@ -539,45 +517,32 @@ p, .pictos {
   justify-content: center;
   align-items: center;
   margin: 0 .2em;
- /* width: 1.2em; */
-/*  height: 1.2em; */
   color: #413219;
   color: #308529;
   background: #e1d3bd;
-/*  background: #308529; */
-
   color: #fff;
   background: #308529;
-    background: #308529;
-	background: #333;
-  
-/*  background: #e1d3bd; */
-/*  font-size: 3rem; */
+  background: #308529;
+  background: #212529;
   text-align: center;
   text-decoration: none;
-  /*  left: 0%;
-	transform: translateX(0%); */
   vertical-align: middle;
 }
 
 .picto-item3:hover:after,
 .picto-item3:focus:after {
-  content: attr(aria-label);  
+  content: attr(aria-label);
   position: absolute;
-  /* top: 2.4em; */
   left: 75%;
-	transform: translateX(-25%); 
-  z-index: 1; 
-  white-space: nowrap;  
+  transform: translateX(-25%);
+  z-index: 1;
+  white-space: nowrap;
   padding: 5px 14px;
-  background: #413219;
+  background: #212529;
   background: #308529;
-
   color: #fff;
   border-radius: 4px;
- /* font-size: 1.2rem; */
-   font-size: 0.8rem; 
-
+  font-size: 0.8rem;
 }
 
 .picto-item3 {
@@ -585,69 +550,31 @@ p, .pictos {
   justify-content: center;
   align-items: center;
   margin: 0 .2em;
- /* width: 1.2em; */
-/*  height: 1.2em; */
-
-/* last
-  color: #413219;
-  color: #308529;
-  background: #e1d3bd;
- end LAST */
-  
-  
-  /*  background: #308529; */
-
-/*  background: #e1d3bd; */
-/*  font-size: 3rem; */
   text-align: center;
   text-decoration: none;
 }
 
 .picto-item4:hover:after,
 .picto-item4:focus:after {
-  content: attr(aria-label);  
+  content: attr(aria-label);
   position: absolute;
-/*  top: 0.5em; */
   left: 75%;
-	transform: translateX(-50%); 
-  z-index: 1; 
-  white-space: nowrap;  
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
   padding: 5px 14px;
-  background: #413219;
-  background: #308529;
+  background: #212529;
+  background: #212529;
   vertical-align: text-top;
- /* width: 10em;
-  height: 2.4em; */
-
-  
-  
   color: #fff;
   border-radius: 4px;
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
 }
 
 .picto-item4 {
   display: inline-flex;
   justify-content: center;
-/*  align-items: center; */
-  margin: 0 1.2em; 
- /* width: 1.2em; */
-/*  height: 1.2em; */
-
-/* last
-  color: #413219;
-  color: #308529;
-  background: #e1d3bd;
- end LAST */
-  
-  
-  /*  background: #308529; */
-
-/*  background: #e1d3bd; */
-/*  font-size: 3rem; */
+  margin: 0 1.2em;
   text-align: center;
-/*  vertical-align: middle; */
   text-decoration: none;
 }
-
-
