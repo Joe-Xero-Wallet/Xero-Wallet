@@ -2,7 +2,7 @@
 
 **Clone and run to see it in action.**
 
-This is a desktop wallet for the [Ether1](https://ether1.org/) project.
+This is a desktop wallet for the [Xerom](https://https://xerom.org/) project.
 
 ## To Use
 
@@ -10,9 +10,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/taeguscromis/Ether1DesktopWallet
+git clone https://github.com/xero-official/Xero-Wallet
 # Go into the repository
-cd Ether1DesktopWallet
+cd cd Xero-Wallet
 # Install dependencies
 npm install
 # Run the app
