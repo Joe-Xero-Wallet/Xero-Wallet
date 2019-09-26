@@ -291,7 +291,7 @@ div.sidebar svg {
 
 .txInfo label {
   line-height: 30px;
-  margin-left: 5px;
+  margin-left: 0px;
   font-size: 1em;
 }
 
@@ -452,8 +452,8 @@ div.noAddressWrapper {
   content: attr(aria-label);  /* display aria-label */
   position: absolute;
   top: 2.4em; 
-  left: 50%;
-	transform: translateX(-50%); /* H center  */
+  left: 0%;
+	transform: translateX(0%); /* H center  */
   z-index: 1; /* Z-Top */
   white-space: nowrap;  /* no cr-lf */
   padding: 5px 14px;
@@ -472,10 +472,10 @@ div.noAddressWrapper {
 /*  content: "▼"; */
   content: "◄"; 
 
-  position: absolute;
+  position: relative;
  /* top: -1em; */
-	left: -50%;
-	transform: translateX(-50%); 
+	left: -45px;
+/*	transform: translateX(-50%); */
   font-size: 24px;
 /*  color: #413219; */
   color: #308529; 
@@ -503,8 +503,12 @@ p, .pictos {
 /*  height: 1.2em; */
   color: #413219;
   color: #308529;
+  color: #fff;
   background: #e1d3bd;
-/*  background: #308529; */
+  background: #333;
+  border-radius: 1px;
+
+  /*  background: #308529; */
 
 /*  background: #e1d3bd; */
 /*  font-size: 3rem; */
@@ -525,7 +529,6 @@ p, .pictos {
   padding: 5px 14px;
   background: #413219;
   background: #308529;
-
   color: #fff;
   border-radius: 4px;
  /* font-size: 1.2rem; */
@@ -543,10 +546,18 @@ p, .pictos {
   background: #e1d3bd;
 /*  background: #308529; */
 
+  color: #fff;
+  background: #308529;
+    background: #308529;
+	background: #333;
+  
 /*  background: #e1d3bd; */
 /*  font-size: 3rem; */
   text-align: center;
   text-decoration: none;
+  /*  left: 0%;
+	transform: translateX(0%); */
+  vertical-align: middle;
 }
 
 .picto-item3:hover:after,
