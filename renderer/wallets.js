@@ -1,6 +1,24 @@
 const {ipcRenderer} = require("electron");
 
-class Wallets {
+var myjson, myjson4, myjson3;
+
+$.getJSON("https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true", function(data) {
+  myjson = `${data.market_data.current_price.usd}`;
+//  var myjson3;
+
+  $.getJSON("https://tradecx.io/api/tickers/xerobtc", function(data) {
+    myjson3 = `${data.ticker.last}`;
+	myjson4 = myjson3 * 100000000;
+
+
+
+  });
+
+  console.log(myjson + " BTC USDJ Price");
+});
+
+//    $.getJSON("https://min-api.cryptocompare.com/data/price?fsym=XERO&tsyms=USD", function (price) {
+ class Wallets {
   constructor() {
     this.addressList = [];
 
@@ -113,10 +131,13 @@ class Wallets {
       EthoMainGUI.renderTemplate("wallets.html", data);
       $(document).trigger("render_wallets");
       EthoWallets.enableButtonTooltips();
-
-      $("#labelSumDollars").html(vsprintf("/ %.2f $ / %.4f $ per XERO", [
-        data.sumBalance * EthoWallets._getPrice(),
-        EthoWallets._getPrice()
+//         EthoWallets._getPrice()
+      $("#labelSumDollars").html(vsprintf("/ %.2f $ / %.4f $ per XERO / %.2f Sats/XERO", [
+//        data.sumBalance * EthoWallets._getPrice(),
+		  data.sumBalance * myjson3 * myjson,
+		  myjson3 * myjson,
+//		EthoWallets._getPrice(),
+		  myjson4
       ]));
     });
   }
