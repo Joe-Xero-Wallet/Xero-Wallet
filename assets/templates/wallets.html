@@ -25,7 +25,7 @@
       <thead>
         <tr>
           <th scope="col" class="noSortCollumn" data-sort-method='none'></th>
-          <th scope="col">Name</th>
+          <th scope="col">Name1</th>
           <th scope="col">Address</th>
           <th scope="col" class="noSortCollumn" data-sort-method='none'></th>
           <th scope="col" data-sort-method='number'>Balance</th>
@@ -37,14 +37,14 @@
             <th scope="row" class="colEdit">
               <button type="button" class="btn btn-etho btnChangWalletName" data-wallet="{{address}}" data-name="{{name}}">Edit</button>
             </th>
-            <td>{{name}}</td>
-            <td>
+            <td class="picto-item" href="#" aria-label="Click to change Name">{{name}}</td>
+            <td class="picto-item2" href="#" aria-label="Click to copy address to clipboard">
               <span class="textAddress">{{address}}</span></td>
             <td>
-              <button type="button" class="btn btn-etho btnShowAddressTransactions" data-wallet="{{address}}">
+              <button type="button" class="btn btn-etho btnShowAddressTransactions picto-item3" data-wallet="{{address}}" href="#" aria-label="Show transactions">
                 <i class="fas fa-exchange-alt"></i>
               </button>
-              <button type="button" class="btn btn-etho btnShowQRCode" data-address="{{address}}">
+              <button type="button" class="btn btn-etho btnShowQRCode picto-item4" data-address="{{address}}" href="#" aria-label="Show QR Code">
                 <i class="fas fa-qrcode"></i>
               </button>
             </td>
